@@ -1,0 +1,19 @@
+.navlink{
+    transition: .5s;
+}
+
+.navlink:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+.changeLink{
+    color: rgb(210, 77, 87);
+    transition: .5s;
+}
+
+.changeLink:hover{
+    color: rgb(210, 77, 87);
+    border-bottom: 3px solid rgb(210,77,87);
+}

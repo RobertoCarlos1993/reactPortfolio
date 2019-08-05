@@ -1,0 +1,9 @@
+.dynamicElement{
+    height: 200px;
+    width: 200px;
+    background: url('./img/moon.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+}

@@ -1,0 +1,9 @@
+.bg-contact{
+    background: url('./img/bg-contact.jpg') no-repeat;
+    background-size: cover;
+    color: #f0f2f7;
+}
+
+#form-container{
+  height: 100vh;
+}

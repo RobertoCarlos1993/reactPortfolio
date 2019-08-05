@@ -1,0 +1,17 @@
+.jobTitle{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, 63.75%);
+    margin-top: -65px;
+    font-family: 'Audiowide', cursive;
+    font-size: 2em;
+    transition: opacity .4s ease-in-out;
+}
+
+
+@media (max-width: 960px){
+    .jobTitle{
+        
+    }
+}

@@ -1,0 +1,26 @@
+.contact-text{
+    font-size: 4em;
+    font-weight:800;
+    text-shadow: 2px 2px #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contact-p{
+    font-family: 'Muli', sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.contact-p > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-p > a:hover {
+    color: #ffc107;
+}
+
+.pt-10{
+    padding-top: 5.2em;
+}

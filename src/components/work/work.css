@@ -1,0 +1,160 @@
+.work {
+ background-color: #fff;
+ padding:50px 0;
+ display: flex;
+ flex-wrap: wrap;
+ position: relative;
+ margin-bottom: 530px;
+ z-index: 1;
+
+}
+
+.title-work{
+  flex: 0 1 100%;
+  color: #293347;
+  font-size: 2.5em;
+  font-weight: 800;
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: .5em;
+  margin-bottom: 30px;
+  position: relative;
+ 
+}
+
+.flexwork {
+  height: 300px;
+  flex:1 0 25%;
+  margin: 2.5%;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.flexwork:nth-child(2):before {
+  content:"Real Estate WordPress";
+  position: absolute;
+  font-size: 1.3em;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family: 'Audiowide', cursive;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flexwork:nth-child(3):before {
+  content:"Film Festival";
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: 600;
+  white-space: nowrap;
+  font-family: 'Audiowide', cursive;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flexwork:nth-child(4):before {
+  content:"React-Redux Project";
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: 600;
+  white-space: nowrap;
+  font-family: 'Audiowide', cursive;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flexwork:nth-child(2){
+ background: url('./img/bg-1.jpg') no-repeat left center;
+ background-size: cover;
+}
+
+.flexwork:nth-child(3){
+ background: url('./img/bg-2.jpg') no-repeat left center;
+ background-size: cover;
+}
+
+.flexwork:nth-child(4){
+ background: url('./img/bg-3.jpg') no-repeat left center;
+ background-size: cover;
+}
+
+
+.flexwork .overlay-work{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  
+}
+
+.flexwork .overlay-work:hover{
+    background-color: rgba(0,0,0,.6);
+    transition: all .5s ease;
+  
+}
+
+.overlay-work a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,350%);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.overlay-work a:hover {
+   background-color: #fff;
+   color: #000;
+   
+}
+
+.hovering{
+  transform: translate(-50%,-50%) !important;
+}
+
+
+@media (max-width: 1050px) {
+ 
+    .overlay-work a {
+      font-size: 15px;
+      transform: translate(-50%,400%);
+      white-space: nowrap;
+    }
+   
+}
+
+
+@media (max-width: 650px) {
+    
+    .flexwork{
+     flex: 1 0 50%;
+     margin: 8%;
+    }
+ 
+    .flexwork:before{
+      font-size: 1.4em;
+    }
+    
+    .overlay-work a {
+      font-size: 16px;
+      white-space: nowrap;
+    }
+   
+}
+
+@media (max-width: 450px) {
+ 
+    .flex-work {
+     margin: 12%;
+    }
+   
+}

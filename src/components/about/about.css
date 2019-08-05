@@ -1,0 +1,204 @@
+.about{
+    width: 100%;
+    height: 680px;
+    background: url('./img/bg-contact.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.about-text {
+   color: #f0f2f7;
+   font-size: 10em;
+   top: 15%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-family: 'Pacifico', cursive;
+   white-space: nowrap;
+   transition: all .5s ease-in-out;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.not-hidden{
+    opacity: 100%;
+}
+
+.flex-item{
+    flex: 1 0 35%;
+    background-color: hsla(0, 0%, 95%, .97);
+    border-radius: 25px;
+    margin: 5em 3%;
+    height: 80%;
+    box-shadow: 5px 10px 8px #888;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.is-showing{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.about-me-info{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 17%;
+    text-align: left;
+    color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.about-me-text{
+    word-spacing: 4px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.about-me-text strong{
+    color: #f06449;
+}
+
+.box-item{
+   flex: 0 50%;
+   text-align: center;
+}
+
+.box-item:nth-child(1){
+       border-top-left-radius: 25px;
+}
+
+.box-item:nth-child(4) {
+    border-bottom-right-radius: 25px;
+}
+
+.box-item:nth-child(1),
+.box-item:nth-child(4){
+   background-color: rgb(224,224,224);
+}
+
+.box-item .info {
+    width: 80%;
+}
+
+.box-item h3 {
+    margin-top: 40%;
+    font-size: 1.17em;
+    font-family: 'Lekton', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.box-item p {
+   font-family: 'Lekton', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 16px;
+}
+
+.box-item i {
+    font-size: 2.5em;
+}
+
+
+/*-----ABOUT SECTION MEDIA QUERIES---- */
+
+@media (max-width: 1050px) {
+
+    .about-me-text {
+      font-size: .95em;
+    }
+
+}
+
+@media (max-width: 960px) {
+
+    .about-me-text {
+      font-size: .85em;
+    }
+
+    .about-me-info p {
+      font-size: .9em;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .about-me-list li {
+      font-size: 3.5em;
+    }
+    .about-me-text {
+      font-size: .75em;
+    }
+
+    .about-me-info p {
+      font-size: .87em;
+    }
+}
+
+@media (max-width: 670px) {
+
+     .about{
+      height: 1400px;
+     }
+    .flex-item{
+     flex: 1 0 60%;
+     height: 40%;
+     margin: 4em 6%;
+    }
+
+    .about-text{
+      font-size: 8em;
+      top:13%;
+    }
+
+    .about-me-info h3 {
+      font-size: 2.4em;
+    }
+
+    .about-me-info p {
+      font-size: 1em;
+    }
+
+    .about-me-text {
+      font-size: .65em;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .about-text{
+      font-size: 6em;
+    }
+
+    .about-me-info h3 {
+      font-size: 2em;
+    }
+
+    .about-me-info p {
+      font-size: .9em;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .about-text{
+      font-size: 6em;
+    }
+
+    .about-me-info h3 {
+      font-size: 1.8em;
+    }
+
+    .about-me-info p {
+      font-size: .8em;
+    }
+}
