@@ -1,23 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import "./textarea.css";
 
-class TextArea extends Component {
-  render() {
+function TextArea(props){
+
     return (
       <div className="form-group">
-        <label className="form-label">{this.props.title}</label>
+        <label className="form-label">{props.title}</label>
         <textarea
           style={textAreaStyle}
           className="form-control"
-          name={this.props.name}
-          rows={this.props.textAllowance}
-          value={this.props.value}
-          onChange={this.props.handleChange}
-          placeholder={this.props.placeholder}
+          name={props.name}
+          rows={props.textAllowance}
+          value={props.value}
+          onChange={props.handleChange}
+          placeholder={props.placeholder}
         />
       </div>
     );
-  }
 }
 
 const textAreaStyle = {

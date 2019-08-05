@@ -1,13 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import "./maintext.css";
 
-class MainText extends Component {
-  render() {
+function MainText(props){
     return (
       <div className="container-fluid mb-4 pt-10">
         <p className="contact-text mb-5 text-center">
-          {this.props.text}{" "}
-          <span className="text-warning">{this.props.textDiff}</span>
+          {props.text}{" "}
+          <span className="text-warning">{props.textDiff}</span>
         </p>
         <p className="h6 text-center contact-p">
           Feel free to reach out or
@@ -21,7 +20,6 @@ class MainText extends Component {
         </p>
       </div>
     );
-  }
 }
 
 export default MainText;

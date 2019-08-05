@@ -19,7 +19,7 @@
   padding-bottom: .5em;
   margin-bottom: 30px;
   position: relative;
- 
+
 }
 
 .flexwork {
@@ -56,7 +56,7 @@
 }
 
 .flexwork:nth-child(4):before {
-  content:"React-Redux Project";
+  content:"React Portfolio";
   position: absolute;
   font-size: 1.3em;
   font-weight: 600;
@@ -68,17 +68,17 @@
 }
 
 .flexwork:nth-child(2){
- background: url('./img/bg-1.jpg') no-repeat left center;
+ background: url('../projects/img/project_2.png') no-repeat left center;
  background-size: cover;
 }
 
 .flexwork:nth-child(3){
- background: url('./img/bg-2.jpg') no-repeat left center;
+ background: url('../projects/img/project_1.png') no-repeat left center;
  background-size: cover;
 }
 
 .flexwork:nth-child(4){
- background: url('./img/bg-3.jpg') no-repeat left center;
+ background: url('../projects/img/project_3.png') no-repeat left center;
  background-size: cover;
 }
 
@@ -88,13 +88,13 @@
   height: 100%;
   border-radius: 10px;
   position: relative;
-  
+
 }
 
 .flexwork .overlay-work:hover{
     background-color: rgba(0,0,0,.6);
     transition: all .5s ease;
-  
+
 }
 
 .overlay-work a {
@@ -114,7 +114,7 @@
 .overlay-work a:hover {
    background-color: #fff;
    color: #000;
-   
+
 }
 
 .hovering{
@@ -123,38 +123,38 @@
 
 
 @media (max-width: 1050px) {
- 
+
     .overlay-work a {
       font-size: 15px;
       transform: translate(-50%,400%);
       white-space: nowrap;
     }
-   
+
 }
 
 
 @media (max-width: 650px) {
-    
+
     .flexwork{
      flex: 1 0 50%;
      margin: 8%;
     }
- 
+
     .flexwork:before{
       font-size: 1.4em;
     }
-    
+
     .overlay-work a {
       font-size: 16px;
       white-space: nowrap;
     }
-   
+
 }
 
 @media (max-width: 450px) {
- 
+
     .flex-work {
      margin: 12%;
     }
-   
+
 }

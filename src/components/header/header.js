@@ -1,60 +1,56 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import Name from "./name";
 import Job from "./job";
 import DynamicElement from "./dynamicelement";
 
 import "./header.css";
 
-class Header extends Component {
+const Header = () => {
+  useEffect(() => {
+    const handleScroll = e => {
+      let a = document.querySelector(".myName");
+      let b = document.querySelector(".jobTitle");
+      let c = document.querySelector(".dynamicElement");
+      let checkY = window.scrollY;
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
+      var change2 = `${checkY / 1.1}`;
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-  handleScroll = function(e) {
-    let a = document.querySelector(".myName");
-    let b = document.querySelector(".jobTitle");
-    let c = document.querySelector(".dynamicElement");
-    let checkY = window.scrollY;
-    var cleft = 100;
-    var ctop = 100;
+      if (checkY < 280) {
+        var ctrans = "translate(" + change2 + "%, " + change2 + "%)";
+        c.style.transform = ctrans;
+      }
 
-    var change2 = `${checkY / 1.1}`;
+      if (window.scrollY > 150) {
+        a.classList.add("hidden");
+      } else {
+        a.classList.remove("hidden");
+      }
 
-    if (checkY < 280) {
-      var ctrans = "translate(" + change2 + "%, " + change2 + "%)";
-      c.style.transform = ctrans;
-    }
+      if (window.scrollY > 300) {
+        b.classList.add("hidden");
+      } else {
+        b.classList.remove("hidden");
+      }
+    };
 
+    window.addEventListener("scroll", handleScroll);
 
-    if (window.scrollY > 150) {
-      a.classList.add("hidden");
-    } else {
-      a.classList.remove("hidden");
-    }
+    return function cleanup() {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-    if (window.scrollY > 300) {
-      b.classList.add("hidden");
-    } else {
-      b.classList.remove("hidden");
-    }
+  return (
+    <div>
+      <header className="container-fluid headerStyle position-relative">
+        <Name name={"Roberto Carlos"} />
+        <Job title={jobTitle} />
+        <DynamicElement />
+      </header>
+    </div>
+  );
+};
 
-  };
-  render() {
-    return (
-      <div>
-        <header className="container-fluid headerStyle position-relative">
-          <Name name={"Roberto Carlos"} />
-          <Job title={jobTitle} />
-          <DynamicElement />
-        </header>
-      </div>
-    );
-  }
-}
 
 const jobTitle = {
   firstLine: "Full-Stack",

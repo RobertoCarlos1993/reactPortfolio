@@ -70,7 +70,7 @@ function Projects() {
                 <p className="h6 text-white font-weight-bold">
                   The Film Festival project was built using a frontend component
                   library called Bootstrap, also it has been spicy up with small
-                  touches using vanilla Javascript, mainly pursuing a more
+                  touches using vanilla Javascript, pursuing a more
                   dynamic site.
                 </p>
               </div>
